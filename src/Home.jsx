@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { Link } from 'react-router-dom';
 function App() {
@@ -48,8 +47,8 @@ function App() {
                         <div class="collapse navbar-collapse me-n3" id="navbarCollapse">
                             <div class="navbar-nav ms-auto">
                                 <nav>
-                                    
-                                        <Link to="/">Home</Link>
+                                {/* Revati : add some spcaing here */}
+                                        <Link to="/">Home</Link>  
                                         <Link to="/about">About</Link>
                                         <Link to="/services">Services</Link>
                                         <Link to="/projects">Projects</Link>
@@ -111,6 +110,8 @@ function App() {
                     </button>
                 </div>
             </div>
+            {/* form start */}
+            {/* Revati : create a different react component for this for names FindYourPestControlServices.jsx */}
             <div class="container-fluid py-5 wow fadeInUp" data-wow-delay=".3s">
                 <div class="container py-5">
                     <div class="bg-light px-4 py-5 rounded">
@@ -149,6 +150,7 @@ function App() {
                     </div>
                 </div>
             </div>
+            {/* form end */}
             <div class="container-fluid py-5">
                 <div class="container py-5">
                     <div class="row g-5">

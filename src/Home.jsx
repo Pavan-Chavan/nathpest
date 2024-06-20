@@ -1,5 +1,10 @@
 import './App.css';
 import { Link } from 'react-router-dom';
+import Form from './components/Form'
+import { Container } from 'react-bootstrap';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+
 function App() {
     return (
         <>
@@ -35,6 +40,8 @@ function App() {
                     </div>
                 </div>
             </div>
+
+
             <div class="container-fluid bg-dark">
                 <div class="container">
                     <nav class="navbar navbar-dark navbar-expand-lg py-lg-0">
@@ -46,17 +53,46 @@ function App() {
                         </button>
                         <div class="collapse navbar-collapse me-n3" id="navbarCollapse">
                             <div class="navbar-nav ms-auto">
-                                <nav>
-                                {/* Revati : add some spcaing here */}
-                                        <Link to="/">Home</Link>  
-                                        <Link to="/about">About</Link>
-                                        <Link to="/services">Services</Link>
-                                        <Link to="/projects">Projects</Link>
-                                        <Link to="/pages">Pages</Link>
-                                        <Link to="/contact">Contact</Link>
+                                {/* <nav>
+                                    {/* Revati : add some spcaing here */}
+
+                                {/* <Link to="/" className="link-spacing">Home</Link>
+                                    <Link to="/about" className="link-spacing">About</Link>
+                                    <Link to="/services" className="link-spacing">Services</Link>
+                                    <Link to="/projects" className="link-spacing">Projects</Link>
+                                    <Link to="/pages" className="link-spacing">Pages</Link>
+                                    <Link to="/contact" className="link-spacing">Contact</Link>
+
+
+                                </nav>  */}
+
+                                <Container>
+                                    <Navbar>
+                                    <Nav className="align-items-center">
+                                        <Nav.Link href="/">Home</Nav.Link>
+                                        <Nav.Link href="/About">About</Nav.Link>
+                                        <Nav.Link href="/Services">Services</Nav.Link>
+                                        <Nav.Link href="/Projects">Projects</Nav.Link>
+                                        <Nav.Link href="/Pages">Pages</Nav.Link>
+                                        <Nav.Link href="/Contact">Contact</Nav.Link>
                                     
-                                </nav>
-                                <div class="nav-item dropdown">
+                                        <div class="nav-item dropdown">
+                                    <Nav.Link href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</Nav.Link>
+                                    <div class="dropdown-menu m-0 bg-primary">
+                                        <Nav.Link href="price.html" class="dropdown-item">Pricing Plan</Nav.Link>
+                                        <Nav.Link href="blog.html" class="dropdown-item">Blog Post</Nav.Link>
+                                        <Nav.Link href="team.html" class="dropdown-item">Team Members</Nav.Link>
+                                        <Nav.Link href="testimonial.html" class="dropdown-item">Testimonial</Nav.Link>
+                                        <Nav.Link href="404.html" class="dropdown-item">404 Page</Nav.Link>
+                                    </div>
+                                </div>
+                                <Nav.Link href="contact.html">Contact</Nav.Link>
+        
+                                    </Nav>
+                                    </Navbar>
+                                </Container>
+                                
+                                {/* <div class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                                     <div class="dropdown-menu m-0 bg-primary">
                                         <a href="price.html" class="dropdown-item">Pricing Plan</a>
@@ -71,7 +107,9 @@ function App() {
                         </div>
                     </nav>
                 </div>
-            </div>
+            </div> */}
+             
+
             <div class="container-fluid carousel px-0 mb-5 pb-5">
                 <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
                     <ol class="carousel-indicators">
@@ -111,46 +149,11 @@ function App() {
                 </div>
             </div>
             {/* form start */}
-            {/* Revati : create a different react component for this for names FindYourPestControlServices.jsx */}
-            <div class="container-fluid py-5 wow fadeInUp" data-wow-delay=".3s">
-                <div class="container py-5">
-                    <div class="bg-light px-4 py-5 rounded">
-                        <div class="text-center">
-                            <h1 class="display-5 mb-5">Find Your Pest Control Services</h1>
-                        </div>
-                        <form class="text-center mb-4" action="#">
-                            <div class="row g-4">
-                                <div class="col-xl-10 col-lg-12">
-                                    <div class="row g-4">
-                                        <div class="col-md-6 col-xl-3">
-                                            <select class="form-select p-3 border-0">
-                                                <option value="Type Of Service" class="">Type Of Service</option>
-                                                <option value="Pest Control-2">Pest Control-2</option>
-                                                <option value="Pest Control-3">Pest Control-3</option>
-                                                <option value="Pest Control-4">Pest Control-4</option>
-                                                <option value="Pest Control-5">Pest Control-5</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-md-6 col-xl-3">
-                                            <input type="text" class="form-control p-3 border-0" placeholder="Name" />
-                                        </div>
-                                        <div class="col-md-6 col-xl-3">
-                                            <input type="text" class="form-control p-3 border-0" placeholder="Phone" />
-                                        </div>
-                                        <div class="col-md-6 col-xl-3">
-                                            <input type="email" class="form-control p-3 border-0" placeholder="Email" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-2 col-lg-12">
-                                    <input type="button" class="btn btn-primary w-100 p-3 border-0" value="GET STARTED" />
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
+
+            <Form />
             {/* form end */}
+
+
             <div class="container-fluid py-5">
                 <div class="container py-5">
                     <div class="row g-5">

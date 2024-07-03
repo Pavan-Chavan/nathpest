@@ -15,7 +15,6 @@ import Contacts from './components/Contacts';
 const App = () => {
     return (
         <Router>
-           
                <Routes>
                 <Route exact path="/" element={<Home/>} />
                 <Route path="/about" element={<About/>} />

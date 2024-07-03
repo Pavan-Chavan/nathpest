@@ -4,6 +4,8 @@ import Navbar from './Navbar'
 function About() {
   return (
     <>
+    {/* <Header/> */}
+    <Navbar/>
     <div class="container-fluid py-5">
       <div class="container py-5">
         <div class="row g-5">

@@ -1,7 +1,9 @@
 import React from 'react'
-
+import Navbar from './Navbar'
 function Services() {
   return (
+    <>
+    <Navbar/>
     <div class="container-fluid services py-5">
       <div class="container text-center py-5">
         <div class="text-center mb-5 wow fadeInUp" data-wow-delay=".3s">
@@ -61,6 +63,7 @@ function Services() {
         <button type="button" class="btn btn-primary border-0 rounded-pill px-4 py-3 mt-4 wow fadeInUp" data-wow-delay=".3s">More Services</button>
       </div>
     </div>
+  </>
   )
 }
 

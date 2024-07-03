@@ -1,7 +1,10 @@
 import React from 'react'
+import Navbar from './Navbar'
 
 function Team() {
   return (
+    <>
+    <Navbar/>
     <div class="container-fluid py-5">
                 <div class="container py-5">
                     <div class="text-center mb-5 wow fadeInUp" data-wow-delay=".3s">
@@ -72,6 +75,7 @@ function Team() {
                     </div>
                 </div>
             </div>
+            </>
   )
 }
 

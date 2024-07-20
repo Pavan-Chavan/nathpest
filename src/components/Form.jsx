@@ -18,21 +18,21 @@ function Form() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs.send(
-      'YOUR_SERVICE_ID',
-      'YOUR_TEMPLATE_ID',
-      formData,
-      'YOUR_USER_ID'
-    ).then((result) => {
-      console.log('Email successfully sent!', result.status, result.text);
-      setFormData({
-        name: '',
-        email: '',
-        message: ''
-      });
-    }).catch((error) => {
-      console.error('There was an error sending the email:', error);
-    });
+    // emailjs.send(
+    //   'YOUR_SERVICE_ID',
+    //   'YOUR_TEMPLATE_ID',
+    //   formData,
+    //   'YOUR_USER_ID'
+    // ).then((result) => {
+    //   console.log('Email successfully sent!', result.status, result.text);
+    //   setFormData({
+    //     name: '',
+    //     email: '',
+    //     message: ''
+    //   });
+    // }).catch((error) => {
+    //   console.error('There was an error sending the email:', error);
+    // });
   };
 
   return (

@@ -9,20 +9,11 @@ import Testimonials from './components/Testimonials';
 import Team from './components/Team';
 import Pricing from './components/Pricing';
 import BlogPost from './components/BlogPost';
-import Contacts from './components/Contacts';
+import Contacts from './components/Footer';
 import Header from './components/Header';
 function App() {
     return (
         <> 
-        {/* Header Start */}
-            <Header/>
-            {/* Header end   */}
-            
-            {/* Navbar Start */}
-            <Navbar/>
-           
-            {/* Navbar end  */}
-             
             {/* Pestkit start */}
             <div class="container-fluid carousel px-0 mb-5 pb-5">
                 <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
@@ -97,7 +88,7 @@ function App() {
             {/* Testmonial End */}
 
             {/* Footer start */}
-            <Contacts/>
+            
             {/* Footer */}
             
         </>

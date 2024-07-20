@@ -11,10 +11,14 @@ import BlogPost from './components/BlogPost';
 import Team from './components/Team';
 import Testimonials from './components/Testimonials';
 import ErrorPage from './components/ErrorPage';
+import Footer from './components/Footer';
+import Header from './components/Header';
 import Contacts from './components/Contacts';
 const App = () => {
     return (
         <Router>
+            <Header/>
+            <Navbar/>
                <Routes>
                 <Route exact path="/" element={<Home/>} />
                 <Route path="/about" element={<About/>} />
@@ -25,8 +29,9 @@ const App = () => {
                 <Route path="/team-members" element={<Team/>} />
                 <Route path="/testimonials" element={<Testimonials/>} />
                 <Route path="/404" element={<ErrorPage/>} />
-                <Route path="/contact" element={<Contacts/>} />
-              </Routes> 
+                <Route path="/contacts" element={<Contacts/>} />
+              </Routes>
+            <Footer/>
         </Router> 
     );
 };

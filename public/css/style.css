@@ -18,6 +18,18 @@
 .back-to-top {
     position: fixed;
     right: 30px;
+    bottom: 170px;
+    display: flex;
+    width: 58px;
+    height: 58px;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+}
+
+.whats-app {
+    position: fixed;
+    right: 30px;
     bottom: 30px;
     display: flex;
     width: 58px;
@@ -27,6 +39,24 @@
     z-index: 99;
 }
 
+.phone-call {
+    position: fixed;
+    right: 30px;
+    bottom: 100px;
+    display: flex;
+    width: 58px;
+    height: 58px;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+}
+
+.whatsapp-icon {
+    background-image: url('../img/whatsapp.svg');
+    height: 30px;
+    width: 30px;
+    background-size: 30px 30px;
+}
 .btn {
     text-transform: uppercase;
     font-weight: 500;

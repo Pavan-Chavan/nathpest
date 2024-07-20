@@ -3,14 +3,13 @@ import Navbar from './Navbar'
 function BlogPost() {
   return (
     <>
-    <Navbar/>
     <div class="container-fluid py-5">
                 <div class="container py-5">
                     <div class="text-center mb-5 wow fadeInUp" data-wow-delay=".3s">
                         <h5 class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-primary">Our Blog</h5>
                         <h1 class="display-5">Latest Blog & News</h1>
                     </div>
-                    <div class="owl-carousel blog-carousel wow fadeInUp" data-wow-delay=".5s">
+                    <div class="blog-carousel wow fadeInUp" data-wow-delay=".5s">
                         <div class="blog-item">
                             <img src="img/blog-1.jpg" class="img-fluid w-100 rounded-top" alt="" />
                             <div class="rounded-bottom bg-light">

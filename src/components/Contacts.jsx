@@ -2,72 +2,84 @@ import React from 'react'
 
 function Contacts() {
   return (
-    <div>
-      <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay=".3s">
-        <div class="container py-5">
-          <div class="row g-4 footer-inner">
-            <div class="col-lg-3 col-md-6">
-              <div class="footer-item">
-                <h4 class="text-white fw-bold mb-4">About PestKit.</h4>
-                <p>Nostrud exertation ullamco labor nisi aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
-                <p class="mb-0"><a class="" href="#">PestKit </a> &copy; 2023 All Right Reserved.</p>
-              </div>
+    <>
+    {/* <Header/> */}
+    
+    <div class="container-fluid py-5">
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay=".3s">
+            <div class="about-img">
+              <div class="rotate-left bg-dark"></div>
+              <div class="rotate-right bg-dark"></div>
+              <img src="img/about-img.jpg" class="img-fluid h-100" alt="img" />
+              {/* <div class="bg-white experiences">
+                <h1 class="display-3">20</h1>
+                <h6 class="fw-bold">Years Of Experiences</h6>
+              </div> */}
             </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="footer-item">
-                <h4 class="text-white fw-bold mb-4">Usefull Link</h4>
-                <div class="d-flex flex-column align-items-start">
-                  <a class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>About Us</a>
-                  <a class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>Contact Us</a>
-                  <a class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>Our Services</a>
-                  <a class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>Terms & Condition</a>
+          </div>
+          <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay=".6s">
+            <div class="about-item overflow-hidden">
+              <h5 class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-primary">About NathPest</h5>
+              <h1 class="display-5 mb-2">Welcome to Nath Pest Management Service</h1>
+              <p class="fs-5" style={{ textAlign: "justify" }}>We Provide Integrated Pest Management Services for Residential and Commercial Places in Pune & Ahmednagar, Maharashtra. Makes Your Premises Pest Free with Low Cost, Pest Control Guarantee, Customer Satisfaction, Free inspection and advice.</p>
+              <p class="fs-5" style={{ textAlign: "justify" }}>We Deliver Safe Pest and Eco-Friendly Pest Management Services. Our Company is ISO-9001:2015 Certified, Our Expert Technicians are Trained By NIPHM and Certified by the Agriculture Department Government of Maharashtra. Our Team is Highly Skilled, Experianced and Extensively Trained by NIPHM/Professionals.</p>
+              <p class="fs-5" style={{ textAlign: "justify" }}>Our Clients Appreciate Our Effective Services, Reliability, Meticulous Approach and The Courteous Demeanor of Our Pest Mangement Specialists.</p>
+              <div class="row">
+                <div class="col-3">
+                  <div class="text-center">
+                    <div class="p-4 bg-dark rounded d-flex" style={{ alignItems: "center", justifyContent: "center" }}>
+                      <i class="fas fa-city fa-4x text-primary"></i>
+                    </div>
+                    <div class="my-2">
+                      <h5>Building</h5>
+                      <h5>Cleaning</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="text-center">
+                    <div class="p-4 bg-dark rounded d-flex" style={{ alignItems: "center", justifyContent: "center" }}>
+                      <i class="fas fa-school fa-4x text-primary"></i>
+                    </div>
+                    <div class="my-2">
+                      <h5>Education</h5>
+                      <h5>center</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="text-center">
+                    <div class="p-4 bg-dark rounded d-flex" style={{ alignItems: "center", justifyContent: "center" }}>
+                      <i class="fas fa-warehouse fa-4x text-primary"></i>
+                    </div>
+                    <div class="my-2">
+                      <h5>Warehouse</h5>
+                      <h5>Cleaning</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="text-center">
+                    <div class="p-4 bg-dark rounded d-flex" style={{ alignItems: "center", justifyContent: "center" }}>
+                      <i class="fas fa-hospital fa-4x text-primary"></i>
+                    </div>
+                    <div class="my-2">
+                      <h5>Hospital</h5>
+                      <h5>Cleaning</h5>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="footer-item">
-                <h4 class="text-white fw-bold mb-4">Services Link</h4>
-                <div class="d-flex flex-column align-items-start">
-                  <a class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>Apartment Cleaning</a>
-                  <a class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>Office Cleaning</a>
-                  <a class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>Car Washing</a>
-                  <a class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>Green Cleaning</a>
-                </div>
-
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="footer-item">
-                <h4 class="text-white fw-bold mb-4">Contact Us</h4>
-                <a href="" class="btn btn-link w-100 text-start ps-0 pb-3 border-bottom rounded-0"><i class="fa fa-map-marker-alt me-3"></i>123 Street, CA, USA</a>
-                <a href="" class="btn btn-link w-100 text-start ps-0 py-3 border-bottom rounded-0"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</a>
-                <a href="" class="btn btn-link w-100 text-start ps-0 py-3 border-bottom rounded-0"><i class="fa fa-envelope me-3"></i>info@example.com</a>
-              </div>
+              <button type="button" class="btn btn-primary border-0 rounded-pill px-4 py-3 mt-5">Find Services</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="container-fluid copyright bg-dark py-4">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
-              <a href="#" class="text-primary mb-0 display-6">Pest<span class="text-white">Kit</span><i class="fa fa-spider text-primary ms-2"></i></a>
-            </div>
-            <div class="col-md-4 copyright-btn text-center text-md-start mb-3 mb-md-0 flex-shrink-0">
-              <a class="btn btn-primary rounded-circle me-3 copyright-icon" href=""><i class="fab fa-twitter"></i></a>
-              <a class="btn btn-primary rounded-circle me-3 copyright-icon" href=""><i class="fab fa-facebook-f"></i></a>
-              <a class="btn btn-primary rounded-circle me-3 copyright-icon" href=""><i class="fab fa-youtube"></i></a>
-              <a class="btn btn-primary rounded-circle me-3 copyright-icon" href=""><i class="fab fa-linkedin-in"></i></a>
-            </div>
-            <div class="col-md-4 my-auto text-center text-md-end text-white">
-              Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a href="#" class="btn btn-primary rounded-circle border-3 back-to-top"><i class="fa fa-arrow-up"></i></a>
     </div>
+  </>
   )
 }
 
-export default Contacts
+export default Contacts;

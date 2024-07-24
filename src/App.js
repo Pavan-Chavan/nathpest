@@ -24,10 +24,10 @@ const App = () => {
                 <Route path="/about" element={<About/>} />
                 <Route path="/services" element={<Services/>} />
                 <Route path="/projects" element={<Projects/>} />
-                <Route path="/pricing-plan" element={<Pricing/>} />
-                <Route path="/blog-post" element={<BlogPost/>} />
-                <Route path="/team-members" element={<Team/>} />
-                <Route path="/testimonials" element={<Testimonials/>} />
+                {/* <Route path="/pricing-plan" element={<Pricing/>} /> */}
+                {/* <Route path="/blog-post" element={<BlogPost/>} /> */}
+                {/* <Route path="/team-members" element={<Team/>} /> */}
+                {/* <Route path="/testimonials" element={<Testimonials/>} /> */}
                 <Route path="/404" element={<ErrorPage/>} />
                 <Route path="/contacts" element={<Contacts/>} />
               </Routes>

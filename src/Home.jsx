@@ -72,19 +72,19 @@ function App() {
             {/* Projects end */}
 
              {/* Blogs start */}
-            <BlogPost/>
+            {/* <BlogPost/> */}
             {/* Blogs end */}
 
             {/* Our pricing start */}
-            <Pricing/>
+            {/* <Pricing/> */}
             {/* Our pricing end */}
 
             {/* Team members start */}
-            <Team/>
+            {/* <Team/> */}
             {/* Team members end */}
 
             {/* Testimonial Start */}
-            <Testimonials/>
+            {/* <Testimonials/> */}
             {/* Testmonial End */}
 
             {/* Footer start */}

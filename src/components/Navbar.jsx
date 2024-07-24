@@ -24,10 +24,10 @@ const Navbar = () => {
                                 <div class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                                     <div class="dropdown-menu m-0 bg-primary">
-                                        <Link to="/pricing-plan" class="dropdown-item">Pricing Plan</Link>
+                                        {/* <Link to="/pricing-plan" class="dropdown-item">Pricing Plan</Link>
                                         <Link to="/blog-post" class="dropdown-item">Blog Post</Link>
                                         <Link to="/team-members" class="dropdown-item">Team Members</Link>
-                                        <Link to="/testimonials" class="dropdown-item">Testimonials</Link>
+                                        <Link to="/testimonials" class="dropdown-item">Testimonials</Link> */}
                                         <Link to="/404" class="dropdown-item">404 Page</Link>
                                         
                                     </div>

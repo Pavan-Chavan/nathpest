@@ -385,6 +385,7 @@
     
 }
 
+
 .services-inner-icon::after {
     content: "";
     position: absolute;
@@ -406,12 +407,12 @@
     
 } 
 
-.services-item i {
+.services-item img {
     text-align: center;
     transition: .5s;
 }
 
-.services-item:hover i {
+.services-item:hover img {
     color: var(--bs-dark) !important;
     z-index: 1;
     rotate: 360deg;

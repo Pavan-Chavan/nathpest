@@ -373,20 +373,13 @@
 
 
 /* ** Services Start ** */
- .services-inner-icon {
-    width: 130px;
-    height: 130px;
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-}
-
-.services-btn {
+.services-inner-icon{
+    height: 150px;
+    width: 150px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items:center;
+    justify-content:center;
 } 
-
 /*** Services End ***/
 
 /*** Project Start ***/

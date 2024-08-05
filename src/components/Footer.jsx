@@ -1,6 +1,9 @@
 import React from 'react'
  
 function Footer() {
+
+  const whatsappNumber = '+917028399920'; 
+  const pretypedMsg = 'Hello, I have enquiry about pest service'; 
   return (
     <div>
       <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay=".3s">
@@ -66,8 +69,9 @@ function Footer() {
         </div>
       </div>
       <a href="#" class="btn btn-primary rounded-circle border-3 back-to-top"><i class="fa fa-arrow-up"></i></a>
-      <a href="tel:+918482869086" class="btn btn-primary rounded-circle border-3 phone-call"><i class="fa fa-phone"></i></a>
-      <a href="whatsapp://send?phone=+918482869086" class="btn btn-primary rounded-circle border-3 whats-app"><i class="fa whatsapp-icon"></i></a>
+      <a href="tel:+917028399920" class="btn btn-primary rounded-circle border-3 phone-call"><i class="fa fa-phone"></i></a>
+      <a href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(pretypedMsg)}`} class="btn btn-primary rounded-circle border-3 whats-app">
+        <i class="fa whatsapp-icon"></i></a>
     </div>
   )
 }

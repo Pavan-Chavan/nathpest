@@ -372,59 +372,15 @@
 /*** About End ***/
 
 
-/*** Services Start ***/
-.services-inner-icon {
-    width: 130px;
-    height: 130px;
-    background: var(--bs-dark);
+/* ** Services Start ** */
+.services-inner-icon{
+    height: 150px;
+    width: 150px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: .5s;
-    position: relative;
-    
-}
-
-
-.services-inner-icon::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-radius: 62px;
-    top: 50%;
-    left: 50%;
-    transition: .5s;
-}
-
-.services-item:hover .services-inner-icon::after {
-    width: 100%;
-    height: 100%;
-    margin-top: -50%;
-    margin-left: -50%;
-    background: var(--bs-primary);
-    color: var(--bs-dark);
-    
+    align-items:center;
+    justify-content:center;
 } 
-
-.services-item img {
-    text-align: center;
-    transition: .5s;
-}
-
-.services-item:hover img {
-    color: var(--bs-dark) !important;
-    z-index: 1;
-    rotate: 360deg;
-}
-
-.services-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/*** Services Start ***/
+/*** Services End ***/
 
 /*** Project Start ***/
 .project-item {

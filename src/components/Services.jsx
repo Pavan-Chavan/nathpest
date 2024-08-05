@@ -12,7 +12,7 @@ function Services() {
         </div>
         <div class="row g-5">
           <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".3s">
-            <div class="bg-light rounded p-5 services-item">
+            <div class="bg-light rounded p-5">
               <div class="d-flex" style={{ alignItems: "center", justifyContent: "center" }}>
                 <div class="mb-4 rounded-circle services-inner-icon">
                   <img src="/img/Cockroach.svg" alt='cockroach' class="h-75 w-75"/>
@@ -24,7 +24,7 @@ function Services() {
             </div>
           </div>
           <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".5s">
-            <div class="bg-light rounded p-5 services-item">
+            <div class="bg-light rounded p-5">
               <div class="d-flex" style={{ alignItems: "center", justifyContent: "center" }}>
                 <div class="mb-4 rounded-circle services-inner-icon">
                   <img src='/img/Termits.svg' alt='termits' class="h-75 w-75"/>
@@ -36,7 +36,7 @@ function Services() {
             </div>
           </div>
           <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".7s">
-            <div class="bg-light rounded p-5 services-item">
+            <div class="bg-light rounded p-5">
               <div class="d-flex" style={{ alignItems: "center", justifyContent: "center" }}>
                 <div class="mb-4 rounded-circle services-inner-icon">
                   <img src='/img/Mosquito.svg' alt='mosquito' class="h-75 w-75"/>
@@ -48,7 +48,7 @@ function Services() {
             </div>
           </div>
           <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".9s">
-            <div class="bg-light rounded p-5 services-item">
+            <div class="bg-light rounded p-5">
               <div class="d-flex" style={{ alignItems: "center", justifyContent: "center" }}>
                 <div class="mb-4 rounded-circle services-inner-icon">
                   <img src='/img/Rodents.svg' alt='rodents' class="h-75 w-75"/>
@@ -60,7 +60,7 @@ function Services() {
             </div>
           </div>
           <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".9s">
-            <div class="bg-light rounded p-5 services-item">
+            <div class="bg-light rounded p-5">
               <div class="d-flex" style={{ alignItems: "center", justifyContent: "center" }}>
                 <div class="mb-4 rounded-circle services-inner-icon">
                   <img src='/img/Bedbug.svg' alt='bedbugs' class="h-75 w-75"/>
@@ -72,7 +72,7 @@ function Services() {
             </div>
           </div>
           <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".9s">
-            <div class="bg-light rounded p-5 services-item">
+            <div class="bg-light rounded p-5">
               <div class="d-flex" style={{ alignItems: "center", justifyContent: "center" }}>
                 <div class="mb-4 rounded-circle services-inner-icon">
                   <img src='/img/housefly-153407.svg' alt='flies' class="h-75 w-75"/>  
@@ -84,7 +84,7 @@ function Services() {
             </div>
           </div>
           <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".9s">
-            <div class="bg-light rounded p-5 services-item">
+            <div class="bg-light rounded p-5">
               <div class="d-flex" style={{ alignItems: "center", justifyContent: "center" }}>
                 <div class="mb-4 rounded-circle services-inner-icon">
                   <img src='/img/Lizards.svg' alt='lizard' class="h-75 w-75"/>  
@@ -96,7 +96,7 @@ function Services() {
             </div>
           </div>
           <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".9s">
-            <div class="bg-light rounded p-5 services-item">
+            <div class="bg-light rounded p-5">
               <div class="d-flex" style={{ alignItems: "center", justifyContent: "center" }}>
                 <div class="mb-4 rounded-circle services-inner-icon">
                   <i class="fa fa-spider fa-3x text-primary"></i>
@@ -108,7 +108,7 @@ function Services() {
             </div>
           </div>
           <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".9s">
-            <div class="bg-light rounded p-5 services-item">
+            <div class="bg-light rounded p-5">
               <div class="d-flex" style={{ alignItems: "center", justifyContent: "center" }}>
                 <div class="mb-4 rounded-circle services-inner-icon">
                   <i class="fa fa-spider fa-3x text-primary"></i>

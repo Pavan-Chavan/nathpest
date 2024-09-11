@@ -10,7 +10,7 @@ function Header() {
                 <div class="container">
                     <div class="d-flex justify-content-between topbar py-2">
                         <div class="d-flex align-items-center flex-shrink-0 topbar-info">
-                            <a href="#" class="me-4 text-secondary"><i class="fas fa-map-marker-alt me-2 text-dark"></i>123 Street, CA, USA</a>
+                            <a href="#" class="me-4 text-secondary"><i class="fas fa-map-marker-alt me-2 text-dark"></i>Sr. No 58/4, Pathare wasti, NR Ganesh Park, Lohegaon, Pune 411047</a>
                             <a href="#" class="me-4 text-secondary"><i class="fas fa-phone-alt me-2 text-dark"></i>+91 8482869086</a>
                             <a href="#" class="text-secondary"><i class="fas fa-envelope me-2 text-dark"></i>nathpestcontrol@gmail.com</a>
                         </div>

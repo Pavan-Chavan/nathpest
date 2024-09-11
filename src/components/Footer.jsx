@@ -42,7 +42,7 @@ function Footer() {
             <div class="col-lg-3 col-md-6">
               <div class="footer-item">
                 <h4 class="text-white fw-bold mb-4">Contact Us</h4>
-                <a href="" class="btn btn-link w-100 text-start ps-0 pb-3 border-bottom rounded-0"><i class="fa fa-map-marker-alt me-3"></i>123 Street, CA, USA</a>
+                <a href="" class="btn btn-link w-100 text-start ps-0 pb-3 border-bottom rounded-0"><i class="fa fa-map-marker-alt me-3"></i>Sr. No 58/4, Pathare wasti, NR Ganesh Park, Lohegaon, Pune 411047</a>
                 <a href="" class="btn btn-link w-100 text-start ps-0 py-3 border-bottom rounded-0"><i class="fa fa-phone-alt me-3"></i>+91 8482869086</a>
                 <a href="" class="btn btn-link w-100 text-start ps-0 py-3 border-bottom rounded-0"><i class="fa fa-envelope me-3"></i> nathpestcontrol@gmail.com</a>
               </div>
@@ -69,7 +69,7 @@ function Footer() {
         </div>
       </div>
       <a href="#" class="btn btn-primary rounded-circle border-3 back-to-top"><i class="fa fa-arrow-up"></i></a>
-      <a href="tel:+917028399920" class="btn btn-primary rounded-circle border-3 phone-call"><i class="fa fa-phone"></i></a>
+      <a href="tel:+918482869086" class="btn btn-primary rounded-circle border-3 phone-call"><i class="fa fa-phone"></i></a>
       <a href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(pretypedMsg)}`} class="btn btn-primary rounded-circle border-3 whats-app">
         <i class="fa whatsapp-icon"></i></a>
     </div>

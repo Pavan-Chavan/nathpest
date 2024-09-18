@@ -1,13 +1,19 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
+import emailjs from '@emailjs/browser';
+import { useLocation } from 'react-router-dom';
 
 function Form() {
+  const location = useLocation();
+  const regex = /section=([^&]+)/;
+  const section = location.search.match(regex)?.[1];
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
     service: ''
   });
-
+  const form = useRef();
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -15,34 +21,42 @@ function Form() {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  useEffect(() => {
+    console.log(location);
+    
+    if (section) {
+      const targetElement = document.getElementById(section);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [section]);
 
-    // emailjs.send(
-    //   'YOUR_SERVICE_ID',
-    //   'YOUR_TEMPLATE_ID',
-    //   formData,
-    //   'YOUR_USER_ID'
-    // ).then((result) => {
-    //   console.log('Email successfully sent!', result.status, result.text);
-    //   setFormData({
-    //     name: '',
-    //     email: '',
-    //     message: ''
-    //   });
-    // }).catch((error) => {
-    //   console.error('There was an error sending the email:', error);
-    // });
+  const handleSubmit = async (e) => {
+    emailjs
+      .sendForm('service_4wx99e9', 'template_17shvfu', form.current, {
+        publicKey: '9wbA9-rzMxxtBhEkk',
+      })
+      .then(
+        () => {
+          window.alert('Email send successfully!');
+        },
+        (error) => {
+          window.alert('Email send failed, Please try again after sometime!');
+          console.log('FAILED...', error);
+        },
+      );
   };
 
   return (
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay=".3s">
+    <section id='inquiryForm'>
+      <div class="container-fluid py-5 wow fadeInUp" data-wow-delay=".3s">
       <div class="container py-5">
         <div class="bg-light px-4 py-5 rounded">
           <div class="text-center">
               <h1 class="display-5 mb-5">Find Your Pest Control Services</h1>
           </div>
-          <form class="text-center mb-4" action="#">
+          <form class="text-center mb-4" action="#" ref={form}>
             <div class="row g-4">
                 <div class="col-xl-10 col-lg-12">
                     <div class="row g-4">
@@ -72,13 +86,14 @@ function Form() {
                     </div>
                 </div>
                 <div class="col-xl-2 col-lg-12">
-                    <input type="button" class="btn btn-primary w-100 p-3 border-0" value="GET STARTED" />
+                    <input type="button" class="btn btn-primary w-100 p-3 border-0" value="GET STARTED" onClick={handleSubmit} />
                 </div>
             </div>
           </form>
         </div>
       </div>
   </div>
+    </section>
   )
 }
 

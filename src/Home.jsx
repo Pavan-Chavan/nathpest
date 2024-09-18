@@ -23,22 +23,42 @@ function App() {
                     </ol> */}
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
-                            <img src="img/carousel-2.jpg" class="img-fluid w-100" alt="First slide" />
+                            <img src="img/slide-1.jpeg" class="img-fluid w-100" alt="First slide" />
                             <div class="carousel-caption">
                                 <div class="container carousel-content padding-top">
                                     <h4 class="text-white mb-4 animated slideInDown">No 1 Pest Control Services</h4>
-                                    <h1 class="text-white display-1 mb-4 animated slideInDown">Enjoy Your Home Totally Pest Free</h1>
-                                    <a href="" class="me-2"><button type="button" class="px-5 py-3 btn btn-primary border-2 rounded-pill animated slideInDown">Read More</button></a>
+                                    <h1 class="text-white display-1 mb-4 animated slideInDown">20% discount on all pest service</h1>
+                                    <a href="pdf/Nath PMS brouchre.pdf" class="me-2"><button type="button" class="px-5 py-3 btn btn-primary border-2 rounded-pill animated slideInDown">Download Brouchre</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" style={{background:"#00000000"}}>
+                            <img src="img/slide-2.jpeg" class="img-fluid w-100" alt="Second slide" />
+                            <div class="carousel-caption">
+                                <div class="container carousel-content padding-top">
+                                    {/* <h4 class="text-white mb-4 animated slideInDown">No 1 Pest Control Services</h4>
+                                    <h1 class="text-white display-1 mb-4 animated slideInDown">Why nath pest control</h1>
+                                    <a href="" class="me-2"><button type="button" class="px-5 py-3 btn btn-primary border-2 rounded-pill animated slideInDown">Read More</button></a> */}
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="img/carousel-1.jpg" class="img-fluid w-100" alt="Second slide" />
+                            <img src="img/slide-3.jpeg" class="img-fluid w-100" alt="Second slide" />
                             <div class="carousel-caption">
                                 <div class="container carousel-content padding-top">
-                                    <h4 class="text-white mb-4 animated slideInDown">No 1 Pest Control Services</h4>
+                                    {/* <h4 class="text-white mb-4 animated slideInDown">No 1 Pest Control Services</h4>
+                                    <h1 class="text-white display-1 mb-4 animated slideInDown">Why to live pest free</h1>
+                                    <a href="" class="me-2"><button type="button" class="px-5 py-3 btn btn-primary border-2 rounded-pill animated slideInDown">Read More</button></a> */}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/slide-4.jpeg" class="img-fluid w-100" alt="Second slide" />
+                            <div class="carousel-caption">
+                                <div class="container carousel-content padding-top">
+                                    {/* <h4 class="text-white mb-4 animated slideInDown">No 1 Pest Control Services</h4>
                                     <h1 class="text-white display-1 mb-4 animated slideInDown">Enjoy Your Home Totally Pest Free</h1>
-                                    <a href="" class="me-2"><button type="button" class="px-5 py-3 btn btn-primary border-2 rounded-pill animated slideInDown">Read More</button></a>
+                                    <a href="" class="me-2"><button type="button" class="px-5 py-3 btn btn-primary border-2 rounded-pill animated slideInDown">Read More</button></a> */}
                                 </div>
                             </div>
                         </div>

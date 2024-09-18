@@ -3,11 +3,12 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
-        <div class="container-fluid bg-dark">
+        <div class="container-fluid" style={{backgroundColor: "#0f8b16f5"}}>
             <div class="container">
                 <nav class="navbar navbar-dark navbar-expand-lg py-lg-0">
                     <a href="index.html" class="navbar-brand">
-                        <h1 class="text-primary mb-0 display-5">Nath<span class="text-white">Pest</span><i class="fa fa-spider text-primary ms-2"></i></h1>
+                        <img src='img/logo-2.png' height={"50px"} width={"90px"}/>
+                        {/* <h1 class="text-primary mb-0 display-5">Nath<span class="text-white">Pest</span><i class="fa fa-spider text-primary ms-2"></i></h1> */}
                     </a>
                     <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars text-dark"></span>

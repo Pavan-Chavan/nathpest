@@ -12,7 +12,7 @@ function Header() {
                         <div class="d-flex align-items-center flex-shrink-0 topbar-info">
                             <a href="#" class="me-4 text-secondary"><i class="fas fa-map-marker-alt me-2 text-dark"></i>Sr. No 58/4, Pathare wasti, NR Ganesh Park, Lohegaon, Pune 411047</a>
                             <a href="#" class="me-4 text-secondary"><i class="fas fa-phone-alt me-2 text-dark"></i>+91 8482869086</a>
-                            <a href="#" class="text-secondary"><i class="fas fa-envelope me-2 text-dark"></i>nathpestcontrol@gmail.com</a>
+                            <a href="#" class="text-secondary"><i class="fas fa-envelope me-2 text-dark" style={{textTransform: "lowercase"}}></i>nathpestcontrol@gmail.com</a>
                         </div>
                         <div class="text-end pe-4 me-4 border-end border-dark search-btn">
                             <div class="search-form">

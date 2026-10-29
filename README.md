@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# Nath Pest Management
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React website for Nath Pest Management, providing information about pest control services in Pune and Ahmednagar, Maharashtra.
 
-## Available Scripts
+## Requirements
 
-In the project directory, you can run:
+- Node.js and npm
 
-### `npm start`
+## Run locally
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+npm install
+npm start
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The development server opens at [http://localhost:3000](http://localhost:3000).
 
-### `npm test`
+## Test and build
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm test -- --watchAll=false
+npm run build
+```
 
-### `npm run build`
+The production-ready static site is written to `build/`. To preview it locally:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npx serve -s build
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The `-s` option serves `index.html` for client-side routes. Configure the production host the same way so direct visits to `/about`, `/services`, `/projects`, and `/contacts` work.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## SEO and deployment
 
-### `npm run eject`
+- Each active route has its own page title, description, robots directive, canonical URL, and Open Graph/Twitter metadata.
+- The site includes LocalBusiness structured data and a robots file.
+- The production domain is configured as `https://nathpestmanagement.in` in `.env.production`. `npm run build` uses it for canonical metadata, `build/sitemap.xml`, and the sitemap entry in `build/robots.txt`.
+- If building for a different domain, set `REACT_APP_SITE_URL` in the deployment environment to that site's origin before running the build. It must include `https://` and must not contain a path, query, or fragment.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Deploy the production build
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Point `nathpestmanagement.in` to your static hosting provider and enable HTTPS.
+2. Run the production build:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+  ```bash
+  npm ci
+  npm run build
+  ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Configure the host's publish/output directory as `build/`, then deploy that directory (or its contents).
+4. Configure a single-page-app fallback so unknown paths serve `index.html` with HTTP 200. This is needed for direct visits to `/about`, `/services`, `/projects`, and `/contacts`.
+5. After deployment, verify `https://nathpestmanagement.in`, `https://nathpestmanagement.in/robots.txt`, and `https://nathpestmanagement.in/sitemap.xml`. Add the site to Google Search Console and submit the sitemap.
 
-## Learn More
+This project uses Create React App and renders pages in the browser. Route metadata is set when the app loads; for reliable previews in crawlers that do not execute JavaScript, consider adding static prerendering or server-side rendering.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Routes
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+| Route | Page |
+| --- | --- |
+| `/` | Home |
+| `/about` | About Nath Pest Management |
+| `/services` | Pest control services |
+| `/projects` | Completed projects |
+| `/contacts` | Contact and inquiry form |

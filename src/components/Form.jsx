@@ -54,7 +54,7 @@ function Form() {
       <div class="container py-5">
         <div class="bg-light px-4 py-5 rounded">
           <div class="text-center">
-              <h1 class="display-5 mb-5">Find Your Pest Control Services</h1>
+              <h2 class="display-5 mb-5">Find Your Pest Control Services</h2>
           </div>
           <form class="text-center mb-4" action="#" ref={form}>
             <div class="row g-4">

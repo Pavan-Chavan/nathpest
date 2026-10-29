@@ -6,17 +6,15 @@ import Home from './Home';
 import About  from './components/About';
 import Services from './components/Services';
 import Projects from './components/Projects';
-import Pricing from './components/Pricing';
-import BlogPost from './components/BlogPost';
-import Team from './components/Team';
-import Testimonials from './components/Testimonials';
 import ErrorPage from './components/ErrorPage';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Contacts from './components/Contacts';
+import SEO from './components/SEO';
 const App = () => {
     return (
         <Router>
+            <SEO />
             <Header/>
             <Navbar/>
                <Routes>
@@ -24,12 +22,9 @@ const App = () => {
                 <Route path="/about" element={<About/>} />
                 <Route path="/services" element={<Services/>} />
                 <Route path="/projects" element={<Projects/>} />
-                {/* <Route path="/pricing-plan" element={<Pricing/>} /> */}
-                {/* <Route path="/blog-post" element={<BlogPost/>} /> */}
-                {/* <Route path="/team-members" element={<Team/>} /> */}
-                {/* <Route path="/testimonials" element={<Testimonials/>} /> */}
                 <Route path="/404" element={<ErrorPage/>} />
                 <Route path="/contacts" element={<Contacts/>} />
+                <Route path="*" element={<ErrorPage/>} />
               </Routes>
             <Footer/>
         </Router> 

@@ -20,19 +20,6 @@ const Navbar = () => {
                                 <Link to="/about" class="nav-item nav-link">About</Link>
                                 <Link to="/services" class="nav-item nav-link">Services</Link>
                                 <Link to="/projects" class="nav-item nav-link">Projects</Link>
-
-
-                                <div class="nav-item dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                                    <div class="dropdown-menu m-0 bg-primary">
-                                        {/* <Link to="/pricing-plan" class="dropdown-item">Pricing Plan</Link>
-                                        <Link to="/blog-post" class="dropdown-item">Blog Post</Link>
-                                        <Link to="/team-members" class="dropdown-item">Team Members</Link>
-                                        <Link to="/testimonials" class="dropdown-item">Testimonials</Link> */}
-                                        <Link to="/404" class="dropdown-item">404 Page</Link>
-                                        
-                                    </div>
-                                </div>
                                 <Link to="/contacts" class="nav-item nav-link">Contact</Link>
                         </div>
                     </div>
